@@ -22,7 +22,7 @@ $ mkdir static
 $ # write a windows command to command.html for the client to GET
 $ echo "dir" > static/command.html
 $ # copy server.go into your server directory
-$ copy /path/to/lonely-shell/server.go .
+$ cp ../lonely-shell/server.go .
 $ # build the server
 $ go build server.go
 $ # start the server
@@ -36,7 +36,7 @@ You will need to modify the IP address in `client.go` to fit your needs. It's re
 ```batch
 C:\> :: clone this repository
 C:\> git clone https://github.com/vesche/lonely-shell && cd lonely-shell
-C:\> :: build the client
+C:\lonely-shell> :: build the client
 C:\lonely-shell> go build client.go
 C:\lonely-shell> :: rebuild the client so it will run in a hidden window
 C:\lonely-shell> go build -ldflags -H=windowsgui client.go
